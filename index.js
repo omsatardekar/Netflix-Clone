@@ -1,4 +1,4 @@
-// Consts
+
 const apikey = "7543524441a260664a97044b8e2dc621";
 const apiEndpoint = "https://api.themoviedb.org/3"
 const imgPath = "https://image.tmdb.org/t/p/original";
@@ -12,7 +12,6 @@ const apiPaths = {
 }
 
 
-// Boots up the app
 function init() {
     fetchTrendingMovies();
     fetchAndBuildAllSections();
@@ -107,7 +106,6 @@ function buildMoviesSection(list, categoryName){
     div.className = "movies-section"
     div.innerHTML = moviesSectionHTML;
 
-    // append html into movies container
     moviesCont.append(div);
 }
 
@@ -135,7 +133,7 @@ function searchMovieTrailer(movieName, iframId) {
 window.addEventListener('load',function() {
     init();
     window.addEventListener('scroll', function(){
-        // header ui update
+    
         const header = document.getElementById('header');
         if (window.scrollY > 5) header.classList.add('black-bg')
         else header.classList.remove('black-bg');

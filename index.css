@@ -1,4 +1,4 @@
-/* Normalise css */
+
 html,body{
     background-color: #141414;
     padding:0;
@@ -17,7 +17,6 @@ html,body{
     display: none;
 }
 
-/* Header Css */
 header{
     background-color: transparent;
     position: fixed;
@@ -72,7 +71,6 @@ header.black-bg{
 
 
 
-/* Movies Section CSS */
 .movies-section{
     margin: 41px 0;
 }
@@ -199,9 +197,6 @@ header.black-bg{
     width: 100%;
 }
 
-
-
-/* RESPONSIVE CSS */
 @media (max-width:767px) {
     .main-nav{
         display: none;
